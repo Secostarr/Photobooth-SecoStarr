@@ -1,0 +1,8 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\Binta\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "python.terminal.activateEnvironment": false,
+    "code-runner.executorMap": {
+        "python": "C:\\Users\\Binta\\AppData\\Local\\Programs\\Python\\Python311\\python.exe"
+    },
+    "code-runner.runInTerminal": true
+}

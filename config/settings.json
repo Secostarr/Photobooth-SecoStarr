@@ -1,0 +1,15 @@
+{
+  "default_camera": 0,
+  "default_filter": "Grayscale",
+  "default_layout": "Single",
+  "default_photo_count": 2,
+  "default_countdown": 2,
+  "default_save_format": "png",
+  "output_folder": "photos",
+  "auto_save": false,
+  "auto_open_preview": true,
+  "sound_effect": false,
+  "flash_effect": true,
+  "fullscreen": true,
+  "admin_pin": "1234"
+}

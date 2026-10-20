@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Desktop Photo Studio</h1>
+  <p>Local Web App Edition</p>
+  <div class="actions">
+    <button id="btnNewSession" class="btn primary">Start New Session</button>
+    <a href="/capture" class="btn secondary">Go to Capture</a>
+    <a href="/gallery" class="btn secondary">Open Gallery</a>
+  </div>
+  <div class="meta">
+    <p>Session ID: <strong id="currentSession">-</strong></p>
+    <p>Local URL: <code>http://127.0.0.1:5000</code></p>
+    <p>LAN URL: <code>http://{{ local_ip }}:5000</code></p>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <h3>Template Tersedia</h3>
+    <ul>
+      {% for item in templates %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Frame Tersedia</h3>
+    <ul>
+      {% for item in frames %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endblock %}

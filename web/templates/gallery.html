@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Photo Gallery</h2>
+<div class="gallery-grid">
+  {% if files %}
+    {% for f in files %}
+    <div class="photo-card">
+      <img src="/photos/{{ f }}" alt="{{ f }}">
+      <p>{{ f }}</p>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p>Belum ada foto tersimpan.</p>
+  {% endif %}
+</div>
+{% endblock %}

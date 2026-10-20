@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="capture-layout">
+  <div class="preview-area">
+    <div class="video-placeholder">
+      <div id="countdownBox" class="countdown-text"></div>
+      <p id="camStatusText">Kamera Web Service Preview</p>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <h3>Workflow Capture</h3>
+    <button id="btnStartCapture" class="btn primary full">Capture Now</button>
+    
+    <div class="group">
+      <label>Template</label>
+      <select id="tplSelect">
+        {% for item in templates %}
+        <option value="{{ item }}">{{ item }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="group">
+      <label>Frame</label>
+      <select id="frameSelect">
+        {% for item in frames %}
+        <option value="{{ item }}">{{ item }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="group">
+      <label>Countdown</label>
+      <select id="cdSelect">
+        <option value="3">3 Detik</option>
+        <option value="2">2 Detik</option>
+        <option value="5">5 Detik</option>
+      </select>
+    </div>
+
+    <div class="status-box">
+      <small id="statusMsg">Siap memulai sesi</small>
+    </div>
+  </aside>
+</div>
+{% endblock %}

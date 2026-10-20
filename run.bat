@@ -1,4 +1,4 @@
 @echo off
 cd /d "%~dp0"
-"C:\Users\Binta\AppData\Local\Programs\Python\Python311\python.exe" main.py
+py main.py
 pause
